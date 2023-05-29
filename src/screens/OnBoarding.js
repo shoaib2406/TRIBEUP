@@ -26,21 +26,6 @@ export default function OnBoarding() {
                 fontWeight: 600,
                 fontSize: 18,
             }}>Our App connect the best athlets arround the world</Text>
-            {/* <Text
-                style={{
-                    marginTop: 80,
-                    marginLeft: '7%',
-                    color: '#fff',
-                    fontWeight: 600,
-                    fontSize: 64,
-                    marginBottom: 80
-                }}
-            >
-                Build To
-                Connect
-                And Make
-                Difference
-            </Text> */}
             <View style={styles.container}>
                 <View style={styles.rightContainer}>
                     <Image
@@ -101,10 +86,6 @@ const styles = StyleSheet.create({
         flex: 1,
         position: 'relative',
        
-    },
-    largeText: {
-        fontSize: 24,
-        fontWeight: 'bold',
     },
     image: {
         marginRight:-80,
