@@ -6,7 +6,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const Splash = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate("Home");
+      navigation.navigate("OnBoarding");
     }, 2000);
   });
 
