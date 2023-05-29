@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import { View } from "react-native";
+import { ImageBackground, View } from "react-native";
 
 import { SafeAreaView } from "react-native-safe-area-context";
+import Logo from "../Images/Logo.png";
 
 const Splash = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate("OnBoarding");
+      navigation.navigate("Signin");
     }, 2000);
   });
 
@@ -14,26 +15,28 @@ const Splash = ({ navigation }) => {
     <>
       <SafeAreaView
         style={{
-          backgroundColor: "#0A274C",
+          backgroundColor: "black",
           flex: 1,
           justifyContent: "center",
         }}
       >
         <View
           style={{
-            width: "100%",
-            height: 200,
+            width: "90%",
+            height: 100,
             alignItems: "center",
-            backgroundColor: "red",
+            // backgroundColor: "red",
+            marginLeft: "5%",
           }}
         >
-          {/* <ImageBackground
-            source={logo}
+          <ImageBackground
+            source={Logo}
+            resizeMode="contain"
             style={{
-              width: 150,
-              height: 190,
+              width: "100%",
+              height: 40,
             }}
-          /> */}
+          />
         </View>
       </SafeAreaView>
     </>
