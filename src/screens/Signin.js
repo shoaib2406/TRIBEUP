@@ -9,6 +9,7 @@ import {
 import { Icon } from "react-native-elements";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import LogoImage from "../Components/LogoImage";
+import Navigation from "../Navigation/Navigation";
 
 const SignIn = ({ navigation }) => {
   const [email, setEmail] = useState("");
@@ -118,6 +119,7 @@ const SignIn = ({ navigation }) => {
             disabled={enabled}
             onPressIn={() => {
               //   loginFunc();
+              navigation.navigate("OnBoarding");
             }}
           >
             <View style={styles.loginButton}>
@@ -148,7 +150,7 @@ const SignIn = ({ navigation }) => {
             <TouchableOpacity
               style={{ marginRight: "1%" }}
               onPressIn={() => {
-                //   navigation.navigate("Signup");
+                navigation.navigate("OnBoarding");
               }}
             >
               <Text
