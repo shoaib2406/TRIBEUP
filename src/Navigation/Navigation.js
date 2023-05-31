@@ -4,14 +4,15 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Splash from "../screens/Splash";
 import Signin from "../screens/Signin";
 import OnBoarding from "../screens/OnBoarding";
+import Signup from "../screens/Signup";
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Splash"
-          component={Splash}
+          name="Signup"
+          component={Signup}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -19,6 +20,12 @@ export default function Navigation() {
           component={Signin}
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="Splash"
+          component={Splash}
+          options={{ headerShown: false }}
+        />
+
         <Stack.Screen
           name="OnBoarding"
           component={OnBoarding}

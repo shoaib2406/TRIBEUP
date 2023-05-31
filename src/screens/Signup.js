@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import Header from "../Components/Header";
 
-const SignIn = ({ navigation }) => {
+const Signup = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [enabled, setEnabled] = useState(false);
@@ -174,4 +174,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignIn;
+export default Signup;
