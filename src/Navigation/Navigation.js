@@ -4,11 +4,17 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Splash from "../screens/Splash";
 import Signin from "../screens/Signin";
 import OnBoarding from "../screens/OnBoarding";
+import Price from "../screens/Price";
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="Price"
+          component={Price}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Splash"
           component={Splash}
