@@ -5,11 +5,17 @@ import Splash from "../screens/Splash";
 import Signin from "../screens/Signin";
 import OnBoarding from "../screens/OnBoarding";
 import Price from "../screens/Price";
+import MyProfile from "../screens/MyProfile";
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="MyProfile"
+          component={MyProfile}
+          options={{ headerShown: false }}
+        />
       <Stack.Screen
           name="Price"
           component={Price}
