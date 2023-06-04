@@ -7,24 +7,15 @@ import OnBoarding from "../screens/OnBoarding";
 import Price from "../screens/Price";
 import MyProfile from "../screens/MyProfile";
 import EditProfile from "../screens/EditProfile";
+import ChangePassword from "../screens/ChangePassword";
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen
-          name="EditProfile"
-          component={EditProfile}
-          options={{ headerShown: false }}
-        />
-      <Stack.Screen
-          name="MyProfile"
-          component={MyProfile}
-          options={{ headerShown: false }}
-        />
-      <Stack.Screen
-          name="Price"
-          component={Price}
+          name="ChangePassword"
+          component={ChangePassword}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -40,6 +31,21 @@ export default function Navigation() {
         <Stack.Screen
           name="OnBoarding"
           component={OnBoarding}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="EditProfile"
+          component={EditProfile}
+          options={{ headerShown: false }}
+        />
+      <Stack.Screen
+          name="MyProfile"
+          component={MyProfile}
+          options={{ headerShown: false }}
+        />
+      <Stack.Screen
+          name="Price"
+          component={Price}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
