@@ -6,7 +6,9 @@ import { Icon } from "react-native-elements";
 import Box from "../../assets/box.png";
 import Star from "../../assets/star.png";
 import Diamand from "../../assets/diamand.png";
-export default function MyProfile() {
+import Navigation from "../Navigation/Navigation";
+
+export default function MyProfile({ navigation }) {
     return (
         <View style={{
             backgroundColor: "#000",
@@ -47,16 +49,20 @@ export default function MyProfile() {
                 />
                 <Text style={styles.subHeading}>Shoaib Ur Rehman</Text>
             </View>
-            <View style={{ flexDirection: 'row',alignItems: 'center',marginBottom:'7%',marginTop:'7%'  }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: '7%', marginTop: '7%' }}>
+                <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', marginTop: '7%' }} onPressIn={() => {
+                    navigation.navigate("EditProfile");
+                }}>
 
-                <View style={{ width: '45%' }}>
+                    <View style={{ width: '57%' }}>
 
-                    <Image style={styles.img} source={Box} />
+                        <Image style={styles.img} source={Box} />
 
-                </View>
-                <Text style={styles.subHeading}> Edit Profile</Text>
+                    </View>
+                    <Text style={styles.subHeading}> Edit Profile</Text>
+                </TouchableOpacity>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center',marginBottom:'7%'  }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: '7%' }}>
 
                 <View style={{ width: '45%' }}>
 
@@ -65,7 +71,7 @@ export default function MyProfile() {
                 </View>
                 <Text style={styles.subHeading}>Privacy Settings</Text>
             </View>
-            <View style={{ flexDirection: 'row', alignItems: 'center',marginBottom:'7%'  }}>
+            <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: '7%' }}>
 
                 <View style={{ width: '45%' }}>
 

@@ -7,7 +7,7 @@ import Logo from "../Images/Logo.png";
 const Splash = ({ navigation }) => {
   useEffect(() => {
     setTimeout(() => {
-      navigation.navigate("Signin");
+      navigation.navigate("OnBoarding");
     }, 2000);
   });
 

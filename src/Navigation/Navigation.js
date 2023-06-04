@@ -13,11 +13,6 @@ export default function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen
-          name="ChangePassword"
-          component={ChangePassword}
-          options={{ headerShown: false }}
-        />
         <Stack.Screen
           name="Splash"
           component={Splash}
@@ -46,6 +41,11 @@ export default function Navigation() {
       <Stack.Screen
           name="Price"
           component={Price}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="ChangePassword"
+          component={ChangePassword}
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

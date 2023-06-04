@@ -7,8 +7,9 @@ import Box from "../../assets/box.png";
 import Star from "../../assets/star.png";
 import Diamand from "../../assets/diamand.png";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
+import Navigation from "../Navigation/Navigation";
 
-export default function Price() {
+export default function Price({navigation}) {
       return (
         <KeyboardAwareScrollView style={{
             backgroundColor: "#000",

@@ -5,9 +5,11 @@ import { Icon } from "react-native-elements";
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 // import { Entypo } from '@expo/vector-icons';
+import Navigation from "../Navigation/Navigation";
+
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-export default function EditProfile() {
+export default function EditProfile({navigation}) {
     return (
         <View style={{
             backgroundColor: "#000",

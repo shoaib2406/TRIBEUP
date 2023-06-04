@@ -98,7 +98,7 @@ const SignIn = ({ navigation }) => {
               <TouchableOpacity
                 style={{ marginRight: "1%" }}
                 onPressIn={() => {
-                  //   navigation.navigate("Signup");
+                    navigation.navigate("ChangePassword");
                 }}
               >
                 <Text
@@ -114,12 +114,13 @@ const SignIn = ({ navigation }) => {
               </TouchableOpacity>
             </View>
           </View>
+<View style={{marginTop:50}}>
 
           <TouchableOpacity
             disabled={enabled}
             onPressIn={() => {
               //   loginFunc();
-              navigation.navigate("OnBoarding");
+              navigation.navigate("MyProfile");
             }}
           >
             <View style={styles.loginButton}>
@@ -130,6 +131,7 @@ const SignIn = ({ navigation }) => {
               </Text>
             </View>
           </TouchableOpacity>
+</View>
         </View>
 
         <View style={{ flex: 0.5, alignItems: "center" }} />
@@ -150,7 +152,7 @@ const SignIn = ({ navigation }) => {
             <TouchableOpacity
               style={{ marginRight: "1%" }}
               onPressIn={() => {
-                navigation.navigate("OnBoarding");
+                navigation.navigate("Price");
               }}
             >
               <Text
@@ -189,7 +191,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     width: 290,
     height: 60,
-    top: 50,
+    // top: 50,
+    // marginTop:50,
     alignItems: "center",
     borderRadius: 16,
     color: "white",
@@ -207,6 +210,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     flexWrap: "wrap",
     marginLeft: "4%",
+    marginTop:20
   },
 });
 

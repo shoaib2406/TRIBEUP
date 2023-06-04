@@ -2,7 +2,9 @@ import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import React from "react";
 import Logo from "../../assets/logo.png";
 import rugby from "../../assets/rugby.png";
-export default function OnBoarding() {
+import Navigation from "../Navigation/Navigation";
+
+export default function OnBoarding({navigation}) {
   return (
     <View
       style={{
@@ -41,7 +43,10 @@ export default function OnBoarding() {
         </View>
       </View>
       <TouchableOpacity
-        onPress={console.log("Hi")}
+        onPressIn={() => {
+          navigation.navigate("Signin");
+
+      }}
         style={styles.appButtonContainer}
       >
         <Text style={styles.appButtonText}>Sign up with email</Text>
