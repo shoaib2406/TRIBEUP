@@ -6,11 +6,17 @@ import Signin from "../screens/Signin";
 import OnBoarding from "../screens/OnBoarding";
 import Price from "../screens/Price";
 import MyProfile from "../screens/MyProfile";
+import EditProfile from "../screens/EditProfile";
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="EditProfile"
+          component={EditProfile}
+          options={{ headerShown: false }}
+        />
       <Stack.Screen
           name="MyProfile"
           component={MyProfile}

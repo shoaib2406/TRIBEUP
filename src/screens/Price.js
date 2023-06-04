@@ -21,7 +21,7 @@ export default function Price() {
                     marginBottom: '10%'
                 }}
             >
-                <Image style={styles.tinyLogo} source={Logo} />
+                <Image source={Logo} />
             </View>
             <TouchableOpacity>
                 <View style={styles.row}>
