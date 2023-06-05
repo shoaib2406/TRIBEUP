@@ -4,10 +4,16 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Splash from "../screens/Splash";
 import Signin from "../screens/Signin";
 import OnBoarding from "../screens/OnBoarding";
+import Signup from "../screens/Signup";
+import BasicSetting from "../screens/BasicSetting";
+import WorkSetting from "../screens/WorkSetting";
+import LocationSetting from "../screens/LocationSetting";
+import EducationSetting from "../screens/EducationSetting";
 import Price from "../screens/Price";
 import MyProfile from "../screens/MyProfile";
 import EditProfile from "../screens/EditProfile";
 import ChangePassword from "../screens/ChangePassword";
+
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
@@ -19,8 +25,18 @@ export default function Navigation() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
-          name="Signin"
-          component={Signin}
+          name="EducationSetting"
+          component={EducationSetting}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="BasicSetting"
+          component={BasicSetting}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="LocationSetting"
+          component={LocationSetting}
           options={{ headerShown: false }}
         />
         <Stack.Screen
@@ -29,16 +45,31 @@ export default function Navigation() {
           options={{ headerShown: false }}
         />
         <Stack.Screen
+          name="WorkSetting"
+          component={WorkSetting}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Signup"
+          component={Signup}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Signin"
+          component={Signin}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
           name="EditProfile"
           component={EditProfile}
           options={{ headerShown: false }}
         />
-      <Stack.Screen
+        <Stack.Screen
           name="MyProfile"
           component={MyProfile}
           options={{ headerShown: false }}
         />
-      <Stack.Screen
+        <Stack.Screen
           name="Price"
           component={Price}
           options={{ headerShown: false }}
