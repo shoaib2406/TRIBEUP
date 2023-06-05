@@ -16,7 +16,7 @@ const SignIn = ({ navigation }) => {
   const [password, setPassword] = useState("");
   const [enabled, setEnabled] = useState(false);
   const [loading, setLoading] = useState(false);
-
+console.log("Master Code")
   return (
     <KeyboardAwareScrollView>
       <View
