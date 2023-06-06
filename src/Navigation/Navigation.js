@@ -15,12 +15,24 @@ import EditProfile from "../screens/EditProfile";
 import ChangePassword from "../screens/ChangePassword";
 import Article from "../screens/ArticleScreen";
 import VideoLibrary from "../screens/VideoLibrary";
+import Notification from "../screens/Notification";
+import Setting from "../screens/Setting";
 
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="Setting"
+          component={Setting}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Notification"
+          component={Notification}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="VideoLibrary"
           component={VideoLibrary}
