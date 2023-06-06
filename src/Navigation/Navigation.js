@@ -16,6 +16,8 @@ import ChangePassword from "../screens/ChangePassword";
 import Article from "../screens/ArticleScreen";
 import VideoLibrary from "../screens/VideoLibrary";
 import MessageList from "../screens/MessageList";
+import Notification from "../screens/Notification";
+import Setting from "../screens/Setting";
 
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
@@ -25,6 +27,16 @@ export default function Navigation() {
       <Stack.Screen
           name="MessageList"
           component={MessageList}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Setting"
+          component={Setting}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Notification"
+          component={Notification}
           options={{ headerShown: false }}
         />
         <Stack.Screen
