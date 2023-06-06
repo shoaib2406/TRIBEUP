@@ -13,12 +13,18 @@ import Price from "../screens/Price";
 import MyProfile from "../screens/MyProfile";
 import EditProfile from "../screens/EditProfile";
 import ChangePassword from "../screens/ChangePassword";
+import Article from "../screens/ArticleScreen";
 
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="Article"
+          component={Article}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Splash"
           component={Splash}
