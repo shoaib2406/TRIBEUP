@@ -15,6 +15,7 @@ import EditProfile from "../screens/EditProfile";
 import ChangePassword from "../screens/ChangePassword";
 import Article from "../screens/ArticleScreen";
 import VideoLibrary from "../screens/VideoLibrary";
+import MessageList from "../screens/MessageList";
 import Notification from "../screens/Notification";
 import Setting from "../screens/Setting";
 
@@ -23,6 +24,11 @@ export default function Navigation() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="MessageList"
+          component={MessageList}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Setting"
           component={Setting}
