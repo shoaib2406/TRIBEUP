@@ -14,13 +14,19 @@ import MyProfile from "../screens/MyProfile";
 import EditProfile from "../screens/EditProfile";
 import ChangePassword from "../screens/ChangePassword";
 import Article from "../screens/ArticleScreen";
+import VideoLibrary from "../screens/VideoLibrary";
 
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen
+        <Stack.Screen
+          name="VideoLibrary"
+          component={VideoLibrary}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
           name="Article"
           component={Article}
           options={{ headerShown: false }}
