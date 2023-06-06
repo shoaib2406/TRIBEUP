@@ -15,12 +15,18 @@ import EditProfile from "../screens/EditProfile";
 import ChangePassword from "../screens/ChangePassword";
 import Article from "../screens/ArticleScreen";
 import VideoLibrary from "../screens/VideoLibrary";
+import MessageList from "../screens/MessageList";
 
 export default function Navigation() {
   const Stack = createNativeStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator>
+      <Stack.Screen
+          name="MessageList"
+          component={MessageList}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="VideoLibrary"
           component={VideoLibrary}
