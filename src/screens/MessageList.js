@@ -64,16 +64,6 @@ export default function MessageList({ navigation }) {
                                     flex: 1, borderTopLeftRadius: 50, backgroundColor: "#2B2C2D", height: 900, marginTop: 18,
                                     borderTopRightRadius: 50,
                                 }}>
-                                    {/* <View style={{ flexDirection: 'row', alignItems: 'center',padding:20, }}>
-                                        <View style={styles.imageContainer}>
-                                            <Image
-                                                source={User} // Replace with your actual image path
-                                                style={styles.userImage1}
-                                            />
-                                        </View>
-                                        <Text style={styles.subHeading}>Shoaib Ur Rehman</Text>
-                                        <Text style={styles.subHeading1}>How are you today?</Text>
-                                    </View> */}
                                     <View style={styles.containerNew}>
                                         <Image
                                             source={User}
@@ -209,65 +199,65 @@ export default function MessageList({ navigation }) {
                 </View>
             </View>
             <View style={{ flex: 0.1 }}>
-        <View style={{ flex: 1 }}>
-          <View style={[styles.row, { height: "100%" }]}>
-            <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
-              <ImageBackground
-                source={First}
-                resizeMode="contain"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  marginTop: "30%",
-                }}
-              />
-            </TouchableOpacity>
+                <View style={{ flex: 1 }}>
+                    <View style={[styles.row, { height: "100%" }]}>
+                        <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
+                            <ImageBackground
+                                source={First}
+                                resizeMode="contain"
+                                style={{
+                                    width: "100%",
+                                    height: 30,
+                                    marginTop: "30%",
+                                }}
+                            />
+                        </TouchableOpacity>
 
-            <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
-              <ImageBackground
-                source={Second}
-                resizeMode="contain"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  marginTop: "30%",
-                }}
-              />
-            </TouchableOpacity>
+                        <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
+                            <ImageBackground
+                                source={Second}
+                                resizeMode="contain"
+                                style={{
+                                    width: "100%",
+                                    height: 30,
+                                    marginTop: "30%",
+                                }}
+                            />
+                        </TouchableOpacity>
 
-            <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
-              <ImageBackground
-                source={Third}
-                resizeMode="contain"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  marginTop: "30%",
-                }}
-              />
-            </TouchableOpacity>
+                        <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
+                            <ImageBackground
+                                source={Third}
+                                resizeMode="contain"
+                                style={{
+                                    width: "100%",
+                                    height: 30,
+                                    marginTop: "30%",
+                                }}
+                            />
+                        </TouchableOpacity>
 
-            <TouchableOpacity
-              style={{
-                flex: 0.25,
-                backgroundColor: "black",
-                height: "100%",
-                width: 10,
-              }}
-            >
-              <ImageBackground
-                source={Menu}
-                resizeMode="contain"
-                style={{
-                  width: "100%",
-                  height: 30,
-                  marginTop: "30%",
-                }}
-              />
-            </TouchableOpacity>
-          </View>
-        </View>
-      </View>
+                        <TouchableOpacity
+                            style={{
+                                flex: 0.25,
+                                backgroundColor: "black",
+                                height: "100%",
+                                width: 10,
+                            }}
+                        >
+                            <ImageBackground
+                                source={Menu}
+                                resizeMode="contain"
+                                style={{
+                                    width: "100%",
+                                    height: 30,
+                                    marginTop: "30%",
+                                }}
+                            />
+                        </TouchableOpacity>
+                    </View>
+                </View>
+            </View>
         </View>
     );
 };

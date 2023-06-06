@@ -1,9 +1,13 @@
-import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 import React from "react";
 import Logo from "../../assets/logo.png";
 import { Icon } from "react-native-elements";
 import { AntDesign } from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
+import First from "./../Images/First.png";
+import Menu from "./../Images/Menu.png";
+import Second from "./../Images/Second.png";
+import Third from "./../Images/Third.png";
 // import { Entypo } from '@expo/vector-icons';
 import Navigation from "../Navigation/Navigation";
 
@@ -17,6 +21,8 @@ export default function EditProfile({ navigation }) {
         flex: 1,
       }}
     >
+      <View style={{ flex: 0.9, backgroundColor: "#000" }}>
+
       <View
         style={{
           marginTop: 100,
@@ -123,6 +129,67 @@ export default function EditProfile({ navigation }) {
         >
           <Entypo name="graduation-cap" size={30} color="black" />
           <Text style={{ fontSize: 16, fontWeight: "bold" }}>Education</Text>
+        </View>
+      </View>
+      </View>
+      <View style={{ flex: 0.1 }}>
+        <View style={{ flex: 1 }}>
+          <View style={[styles.row, { height: "100%" }]}>
+            <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
+              <ImageBackground
+                source={First}
+                resizeMode="contain"
+                style={{
+                  width: "100%",
+                  height: 30,
+                  marginTop: "30%",
+                }}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
+              <ImageBackground
+                source={Second}
+                resizeMode="contain"
+                style={{
+                  width: "100%",
+                  height: 30,
+                  marginTop: "30%",
+                }}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity style={{ flex: 0.25, backgroundColor: "black", width: 10 }}>
+              <ImageBackground
+                source={Third}
+                resizeMode="contain"
+                style={{
+                  width: "100%",
+                  height: 30,
+                  marginTop: "30%",
+                }}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={{
+                flex: 0.25,
+                backgroundColor: "black",
+                height: "100%",
+                width: 10,
+              }}
+            >
+              <ImageBackground
+                source={Menu}
+                resizeMode="contain"
+                style={{
+                  width: "100%",
+                  height: 30,
+                  marginTop: "30%",
+                }}
+              />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </View>

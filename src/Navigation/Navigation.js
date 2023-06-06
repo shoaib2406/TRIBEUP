@@ -25,6 +25,11 @@ export default function Navigation() {
     <NavigationContainer>
       <Stack.Navigator>
       <Stack.Screen
+          name="EditProfile"
+          component={EditProfile}
+          options={{ headerShown: false }}
+        />
+      <Stack.Screen
           name="MessageList"
           component={MessageList}
           options={{ headerShown: false }}
@@ -89,11 +94,7 @@ export default function Navigation() {
           component={Signin}
           options={{ headerShown: false }}
         />
-        <Stack.Screen
-          name="EditProfile"
-          component={EditProfile}
-          options={{ headerShown: false }}
-        />
+        
         <Stack.Screen
           name="MyProfile"
           component={MyProfile}
